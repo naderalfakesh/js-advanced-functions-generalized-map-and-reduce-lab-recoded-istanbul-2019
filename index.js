@@ -1,8 +1,8 @@
 // Add your functions here
 function map(arr,f){
   const newArr = [...arr];
-  for(let elm of newArr){
-    elm = f(elm);
+  for(let i=0 ; i > newArr.length ; i++ ){
+    newArr[i] = f(elm);
   }
   return newArr;
 }
