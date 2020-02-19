@@ -8,10 +8,12 @@ function map(arr,f){
 }
 
 function reduce(arr,f,start=null){
+  let i= 0;
   if(start === null){
     start = arr[0];
+    i=1;
   }
-  for(let i=1 ; i< arr.length ; i++){
+  for(i ; i< arr.length ; i++){
     start = f(arr[i],start);
   }
   return start;
