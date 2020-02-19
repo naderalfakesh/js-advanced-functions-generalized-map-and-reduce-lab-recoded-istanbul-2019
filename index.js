@@ -11,7 +11,7 @@ function reduce(arr,f,start=null){
   if(start === null){
     start = arr[0];
   }
-  for(let i=0 ; i< arr.length ; i++){
+  for(let i=1 ; i< arr.length ; i++){
     start = f(arr[i],start);
   }
   return start;
