@@ -12,7 +12,7 @@ function reduce(arr,f,start=null){
     start = arr[0];
   }
   for(let i=0 ; i< arr.length ; i++){
-    start = f(start,arr[i]);
+    start = f(arr[i],start);
   }
   return start;
 }
