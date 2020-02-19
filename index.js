@@ -6,3 +6,13 @@ function map(arr,f){
   }
   return newArr;
 }
+
+function reduce(arr,f,start=null){
+  if(start === null){
+    start = arr[0];
+  }
+  for(let i=0 ; i< arr.length ; i++){
+    start = f(start,arr[i]);
+  }
+  return start;
+}
